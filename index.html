@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 1 - Menghitung Luas Bangun Datar</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Hasil Perhitungan Luas Bangun Datar</h1>
+        <hr>
+        <script>
+            // FUNGSI 1: Menghitung Luas Persegi Panjang
+            // Rumus: Luas = Panjang * Lebar
+            function hitungLuasPersegiPanjang(panjang, lebar) {
+                // Mengalikan nilai variabel panjang dan lebar menggunakan operator aritmatika '*'
+                let luas = panjang * lebar; 
+                return luas; // Mengembalikan hasil perhitungan
+            }
+
+            // FUNGSI 2: Menghitung Luas Bujur Sangkar (Persegi)
+            // Rumus: Luas = Sisi * Sisi
+            function hitungLuasBujurSangkar(sisi) {
+                // Mengalikan nilai variabel sisi dengan dirinya sendiri
+                let luas = sisi * sisi; 
+                return luas; // Mengembalikan hasil perhitungan
+            }
+
+            // FUNGSI 3: Menghitung Luas Segitiga
+            // Rumus: Luas = 0.5 * Alas * Tinggi
+            function hitungLuasSegitiga(alas, tinggi) {
+                // Mengalikan 0.5, alas, dan tinggi menggunakan operator '*'
+                let luas = 0.5 * alas * tinggi; 
+                return luas; // Mengembalikan hasil perhitungan
+            }
+
+            // EKSEKUSI & DEKLARASI VARIABEL INPUT (Nilai Bebas)
+            // 1. Data & Eksekusi Persegi Panjang
+            let panjangPP = 12; // Variabel panjang
+            let lebarPP = 6;    // Variabel lebar
+            let luasPP = hitungLuasPersegiPanjang(panjangPP, lebarPP);
+
+            // 2. Data & Eksekusi Bujur Sangkar
+            let sisiBS = 8;     // Variabel sisi
+            let luasBS = hitungLuasBujurSangkar(sisiBS);
+
+            // 3. Data & Eksekusi Segitiga
+            let alasSegitiga = 20;   // Variabel alas
+            let tinggiSegitiga = 15; // Variabel tinggi
+            let luasSegitiga = hitungLuasSegitiga(alasSegitiga, tinggiSegitiga);
+
+
+            // Hasil
+            document.write("<h3>1. Persegi Panjang</h3>");
+            document.write("Panjang: " + panjangPP + " cm<br>");
+            document.write("Lebar: " + lebarPP + " cm<br>");
+            document.write("<b>Luas Persegi Panjang: " + luasPP + " cm²</b><br><br>");
+
+            document.write("<h3>2. Bujur Sangkar (Persegi)</h3>");
+            document.write("Sisi: " + sisiBS + " cm<br>");
+            document.write("<b>Luas Bujur Sangkar: " + luasBS + " cm²</b><br><br>");
+
+            document.write("<h3>3. Segitiga</h3>");
+            document.write("Alas: " + alasSegitiga + " cm<br>");
+            document.write("Tinggi: " + tinggiSegitiga + " cm<br>");
+            document.write("<b>Luas Segitiga: " + luasSegitiga + " cm²</b><br>");
+        </script>
+    </div>
+
+</body>
+</html>
